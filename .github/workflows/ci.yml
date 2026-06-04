@@ -9,6 +9,6 @@ jobs:
       - uses: dioptra-io/publish-docker-action@v1
         with:
           file: ./Dockerfile
-          image: dioptra-io/retina-agent
+          image: ghcr.io/elenetta17/retina-agent
           password: ${{ secrets.GITHUB_TOKEN }}
           push: ${{ github.event_name == 'push' && github.actor != 'dependabot[bot]' }}
